@@ -1,0 +1,16 @@
+(defun rozw(a b c)
+    (setq delta (-(* b b) (* 4 a c) ))
+    (setq delta (-(* b b) (* 4 a c) ))
+    (terpri)
+    (setq sqrt_delta (sqrt delta))
+    (terpri)
+    
+    (if (> delta 0)
+        (print (list (/ (- (* b -1) (* sqrt_delta -1)) (* 2 a)) (/ (- (* b -1) sqrt_delta) (* 2 a)))))
+    (if (< delta 0)
+        (print nil))
+    (if (= delta 0)
+        (print (list (/ (* b -1) (* 2 a)))))
+)
+
+(rozw 1 2 0)
